@@ -23,8 +23,6 @@
     '^com\\.microsoft\\.VSCode$',
     // Sublime Text
     '^com\\.sublimetext\\.3$',
-    // Kitty
-    '^net\\.kovidgoyal\\.kitty$',
   ],
 
   // bundle identifiers for remote desktop applications
@@ -54,7 +52,8 @@
     // Google Chrome
     '^com\\.google\\.chrome$',
     // Mozilla Firefox
-    '^org\\.mozilla\\.firefox$',
+    '^org\\.mozilla\\.firefox',
+    '^org\\.mozilla\\.nightly$',
   ],
 
   // since this combination is used so much, it's given its own identifier

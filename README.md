@@ -6,7 +6,7 @@ If you'd like to contribute to this project, please check the [Contributing](#Co
 ## Installation
 Copy and paste the following URL into your browser window and Karabiner-Elements *should* ask to install the file:
 
-    karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/rux616/karabiner-windows-mode/master/json/windows_shortcuts.json
+    karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/tehbilly/karabiner-windows-mode/master/json/windows_shortcuts.json
 
 ## List of Shortcuts
 First, a note about how these shortcuts are named in Karabiner-Elements. They follow the convention
@@ -39,88 +39,6 @@ Generally Excepted Applications:
   * Terminal
   * WezTerm
 
-### Navigation Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| Insert | Ctrl | C | Command | Use only 1 Ctrl+Insert shortcut. Works in Terminal Emulators. |
-| Insert | Ctrl | C | Command | Use only 1 Ctrl+Insert shortcut. |
-| Insert | Shift | V | Command | Use only 1 Shift+Insert shortcut. Works in Terminal Emulators. |
-| Insert | Shift | V | Command | Use only 1 Shift+Insert shortcut. |
-| Home |  | Left Arrow | Command |  |
-| Home | Ctrl | Up Arrow | Command |  |
-| Home | Shift | Left Arrow | Command+Shift |  |
-| Home | Ctrl+Shift | Up Arrow | Command+Shift |  |
-| End |  | Right Arrow | Command |  |
-| End | Ctrl | Down Arrow | Command |  |
-| End | Shift | Right Arrow | Command+Shift |  |
-| End | Ctrl+Shift | Down Arrow | Command+Shift |  |
-| Left Arrow | Ctrl | Left Arrow | Option |  |
-| Left Arrow | Ctrl+Shift | Left Arrow | Option+Shift |  |
-| Right Arrow | Ctrl | Right Arrow | Option |  |
-| Right Arrow | Ctrl+Shift | Right Arrow | Option+Shift |  |
-
-### Command Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| Backspace | Ctrl | Backspace | Option |  |
-| Delete | Ctrl | Delete | Option |  |
-| Enter | Ctrl | Enter | Command |  |
-| Enter | Ctrl+Shift | Enter | Command+Shift |  |
-
-### Modifier Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| Win |  | Spotlight |  | Works in Excepted Applications. |
-
-### Alphanumeric Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| A | Ctrl | A | Command |  |
-| B | Ctrl | B | Command |  |
-| C | Left Ctrl | C | Command |  |
-| C | Ctrl+Shift | C | Command | Only applies to Terminal Emulators. |
-| F | Ctrl | F | Command |  |
-| I | Ctrl | I | Command |  |
-| L | Win | (Shell Command) |  | Use only 1 Win+L shortcut. Invokes Login Window. Turn on [Fast User Switching](https://support.apple.com/kb/PH25396) first. Executes `/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend`. Works in Excepted Applications. |
-| L | Win | Power | Control+Shift | Use only 1 Win+L shortcut. Invokes Lock Screen. Note that the screen doesn't always fully lock right away. Works in Excepted Applications. |
-| L | Alt+Ctrl | (Shell Command) |  | Use only 1 Alt+Ctrl+L shortcut. Invokes Login Window. Turn on [Fast User Switching](https://support.apple.com/kb/PH25396) first. Executes `/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend`. Works in Excepted Applications. |
-| L | Alt+Ctrl | Power | Control+Shift | Use only 1 Alt+Ctrl+L shortcut. Invokes Lock Screen. Note that the screen doesn't always fully lock right away. Works in Excepted Applications. |
-| N | Ctrl | N | Command |  |
-| O | Ctrl | O | Command |  |
-| P | Ctrl | P | Command |  |
-| R | Ctrl | R | Command |  |
-| S | Ctrl | S | Command |  |
-| T | Ctrl | T | Command |  |
-| U | Ctrl | U | Command |  |
-| V | Ctrl | V | Command |  |
-| V | Ctrl+Shift | V | Command | Only applies to Terminal Emulators. |
-| W | Ctrl | W | Command |  |
-| X | Ctrl | X | Command |  |
-| Y | Ctrl | Y | Command |  |
-| Z | Ctrl | Z | Command |  |
-| 1 | Command | (Shell Command) | | Launches or switches to Finder (pinned to first position in dock by system). |
-| 2 | Command | (Shell Command) | | Launches or switches to the app pinned to the second position in the dock. |
-| 3 | Command | (Shell Command) | | Launches or switches to the app pinned to the third position in the dock. |
-| 4 | Command | (Shell Command) | | Launches or switches to the app pinned to the fourth position in the dock. |
-| 5 | Command | (Shell Command) | | Launches or switches to the app pinned to the fifth position in the dock. |
-| 6 | Command | (Shell Command) | | Launches or switches to the app pinned to the sixth position in the dock. |
-| 7 | Command | (Shell Command) | | Launches or switches to the app pinned to the seventh position in the dock. |
-| 8 | Command | (Shell Command) | | Launches or switches to the app pinned to the eighth position in the dock. |
-| 9 | Command | (Shell Command) | | Launches or switches to the app pinned to the ninth position in the dock. |
-
-### Punctuation Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| / | Ctrl | / | Command | Works in Terminal Emulators. |
-| Space | Ctrl | Space | Command |  |
-
-### Function Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| F1 |  | / | Command+Shift |  |
-| F3 |  | G | Command |  |
-| F4 | Alt | Q | Command | Works in Terminal Emulators. |
-| F4 | Ctrl | W | Command | Only applies to Google Chrome. |
 
 ## Credits
 - [@TechnicallyDifficult](https://github.com/TechnicallyDifficult) for coming up with the initial json file

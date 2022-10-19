@@ -38,17 +38,43 @@
   // key (string, required)
   //   key that will trigger a rule
   //
-  // modifiers (array, optional)
+  // modifiers (array|object, optional)
   //   modifiers that, when combined with <key>, trigger a rule
-  //
-  // key_is_modifier (boolean, optional)
-  //   removes entire 'modifiers' object; only use when <key> is a modifier itself
-  input(key, modifiers=null, key_is_modifier=false):: {
+  input(key, modifiers=null):: {
     key_code: key,
-    [if key_is_modifier then null else 'modifiers']: {
-      [if modifiers != null then 'mandatory']: modifiers,
-      optional: ['any'],
-    },
+    modifiers: if std.isArray(modifiers) then
+      {
+        mandatory: modifiers,
+        optional: ['any'],
+      }
+    else if std.isObject(modifiers) then
+      modifiers
+    else
+      {
+        optional: ['any'],
+      }
+  },
+
+  // mouse_button
+  //
+  // button (string, required)
+  //   button that will be used to trigger a rule (button1, etc.)
+  //
+  // modifiers (array|object, optional)
+  //   modifiers that, when combined with <button>, trigger a rule
+  mouse_button(button, modifiers=null):: {
+    pointing_button: button,
+    modifiers: if std.isArray(modifiers) then
+      {
+        mandatory: modifiers,
+        optional: ['any'],
+      }
+    else if std.isObject(modifiers) then
+      modifiers
+    else
+      {
+        optional: ['any'],
+      }
   },
 
   // outputKey
@@ -95,6 +121,36 @@
   //   file path identifiers of applications
   condition(type, bundles, file_paths=null):: {
     type: 'frontmost_application_' + type,
+    bundle_identifiers: bundles,
+    [if file_paths != null then 'file_paths']: [
+      file_paths,
+    ],
+  },
+
+  // frontmost_application_if
+  //
+  // bundles (array, required)
+  //   bundle identifiers of applications
+  //
+  // file_paths (array, optional)
+  //   file path identifiers of applications
+  frontmost_application_if(bundles, file_paths=null):: {
+    type: 'frontmost_application_if',
+    bundle_identifiers: bundles,
+    [if file_paths != null then 'file_paths']: [
+      file_paths,
+    ],
+  },
+
+  // frontmost_application_unless
+  //
+  // bundles (array, required)
+  //   bundle identifiers of applications
+  //
+  // file_paths (array, optional)
+  //   file path identifiers of applications
+  frontmost_application_unless(bundles, file_paths=null):: {
+    type: 'frontmost_application_unless',
     bundle_identifiers: bundles,
     [if file_paths != null then 'file_paths']: [
       file_paths,
