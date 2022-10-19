@@ -7,12 +7,13 @@
                "conditions": [
                   {
                      "bundle_identifiers": [
-                        "^org\\.gnu\\.emacs$",
-                        "^com\\.jetbrains",
-                        "^com\\.microsoft\\.VSCode$",
-                        "^com\\.sublimetext\\.3$"
+                        "^io\\.alacritty$",
+                        "^co\\.zeit\\.hyper$",
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.apple\\.Terminal$",
+                        "^com\\.github\\.wez\\.wezterm$"
                      ],
-                     "type": "frontmost_application_if"
+                     "type": "frontmost_application_unless"
                   }
                ],
                "from": {
@@ -45,12 +46,13 @@
                "conditions": [
                   {
                      "bundle_identifiers": [
-                        "^org\\.gnu\\.emacs$",
-                        "^com\\.jetbrains",
-                        "^com\\.microsoft\\.VSCode$",
-                        "^com\\.sublimetext\\.3$"
+                        "^io\\.alacritty$",
+                        "^co\\.zeit\\.hyper$",
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.apple\\.Terminal$",
+                        "^com\\.github\\.wez\\.wezterm$"
                      ],
-                     "type": "frontmost_application_if"
+                     "type": "frontmost_application_unless"
                   }
                ],
                "from": {
@@ -83,12 +85,13 @@
                "conditions": [
                   {
                      "bundle_identifiers": [
-                        "^org\\.gnu\\.emacs$",
-                        "^com\\.jetbrains",
-                        "^com\\.microsoft\\.VSCode$",
-                        "^com\\.sublimetext\\.3$"
+                        "^io\\.alacritty$",
+                        "^co\\.zeit\\.hyper$",
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.apple\\.Terminal$",
+                        "^com\\.github\\.wez\\.wezterm$"
                      ],
-                     "type": "frontmost_application_if"
+                     "type": "frontmost_application_unless"
                   }
                ],
                "from": {
@@ -159,12 +162,13 @@
                "conditions": [
                   {
                      "bundle_identifiers": [
-                        "^org\\.gnu\\.emacs$",
-                        "^com\\.jetbrains",
-                        "^com\\.microsoft\\.VSCode$",
-                        "^com\\.sublimetext\\.3$"
+                        "^io\\.alacritty$",
+                        "^co\\.zeit\\.hyper$",
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.apple\\.Terminal$",
+                        "^com\\.github\\.wez\\.wezterm$"
                      ],
-                     "type": "frontmost_application_if"
+                     "type": "frontmost_application_unless"
                   }
                ],
                "from": {
@@ -236,12 +240,13 @@
                "conditions": [
                   {
                      "bundle_identifiers": [
-                        "^org\\.gnu\\.emacs$",
-                        "^com\\.jetbrains",
-                        "^com\\.microsoft\\.VSCode$",
-                        "^com\\.sublimetext\\.3$"
+                        "^io\\.alacritty$",
+                        "^co\\.zeit\\.hyper$",
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.apple\\.Terminal$",
+                        "^com\\.github\\.wez\\.wezterm$"
                      ],
-                     "type": "frontmost_application_if"
+                     "type": "frontmost_application_unless"
                   }
                ],
                "from": {
@@ -274,12 +279,13 @@
                "conditions": [
                   {
                      "bundle_identifiers": [
-                        "^org\\.gnu\\.emacs$",
-                        "^com\\.jetbrains",
-                        "^com\\.microsoft\\.VSCode$",
-                        "^com\\.sublimetext\\.3$"
+                        "^io\\.alacritty$",
+                        "^co\\.zeit\\.hyper$",
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.apple\\.Terminal$",
+                        "^com\\.github\\.wez\\.wezterm$"
                      ],
-                     "type": "frontmost_application_if"
+                     "type": "frontmost_application_unless"
                   }
                ],
                "from": {
@@ -738,33 +744,6 @@
                      "key_code": "delete_forward",
                      "modifiers": [
                         "option"
-                     ]
-                  }
-               ],
-               "type": "basic"
-            }
-         ]
-      },
-      {
-         "description": "[Selection] Select All (ctrl+a -> cmd+a)",
-         "manipulators": [
-            {
-               "from": {
-                  "key_code": "a",
-                  "modifiers": {
-                     "mandatory": [
-                        "control"
-                     ],
-                     "optional": [
-                        "any"
-                     ]
-                  }
-               },
-               "to": [
-                  {
-                     "key_code": "a",
-                     "modifiers": [
-                        "command"
                      ]
                   }
                ],
